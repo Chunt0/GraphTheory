@@ -16,49 +16,51 @@ Questions to ask when dealing with a graph problem:
 
 Problem 1: Shortest Path Problem
 
-    Given a weighted graph, find the shrotest path of edges from node A to node Been
-    Algorithms: Breadth First Search (unweight graphs), Dijkstra's Algo, Bellman Ford
-        Floyd-Warshall, A*
+Given a weighted graph, find the shrotest path of edges from node A to node Been
+
+Algorithms: Breadth First Search (unweight graphs), Dijkstra's Algo, Bellman Ford
+Floyd-Warshall, A*
 
 Problem 2: Connectivity
     
-    Does there exist a path between node A and node Bellman
-    Typical SOlution: Use union find data structure or any search algorithm
+Does there exist a path between node A and node Bellman
+Typical SOlution: Use union find data structure or any search algorithm
 
 Problem 3: Negative Cycles
 
-    Does my weighted digraph have any negative cycles? If so, where?
-    Algorithms: Bellman-Ford and Floyd-Warshall
+Does my weighted digraph have any negative cycles? If so, where?
+Algorithms: Bellman-Ford and Floyd-Warshall
 
 Problem 4: Strongly Connected Components
 
-    Strongly Connected Components (SCCs) can be thought of as self-contained cycles
-    within a directed graph where every vertex in a given cycle can reach every 
-    other vertex in the same cycle
-    Algorithms: Tarjan's and Kosaraju's algorithm
+Strongly Connected Components (SCCs) can be thought of as self-contained cycles
+within a directed graph where every vertex in a given cycle can reach every 
+other vertex in the same cycle
+Algorithms: Tarjan's and Kosaraju's algorithm
 
 Problem 5: Traveling Salesman Problem
 
-    Given a list of cities and the distance between each pair of cities, what is
-    the shortest possible route that visits each city exactly once and returns to
-    the origin city.
-    Algorithms: Held-Karp, branch and bound and many approximation algorithms
+Given a list of cities and the distance between each pair of cities, what is
+the shortest possible route that visits each city exactly once and returns to
+the origin city.
+Algorithms: Held-Karp, branch and bound and many approximation algorithms
 
-    NP-Hard
+NP-Hard
 
 Problem 6: Bridges
 
-    A bridge/cut edge is any edge in a graph whose removal increase the number 
-    of connected compoenets
+A bridge/cut edge is any edge in a graph whose removal increase the number 
+of connected compoenets
 
-    Bridges are important in agraph theory because they often hint at weak points,
-    bottlenecks or vulnerabilities in a graph
+Bridges are important in agraph theory because they oft:wq
+en hint at weak points,
+bottlenecks or vulnerabilities in a graph
 
 Problem 7: Articulation Points
     
-    Any node in a graph whose removal increase the number of connected components
+Any node in a graph whose removal increase the number of connected components
 
-    Good for same as above
+Good for same as above
 
 Problem 8: Minimum Spanning Tree
 
