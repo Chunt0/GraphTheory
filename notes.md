@@ -64,15 +64,15 @@ Good for same as above
 
 Problem 8: Minimum Spanning Tree
 
-    Subset of the edge list that connects every node with a minimum cost
+Subset of the edge list that connects every node with a minimum cost
 
-    Algorithms: Kruskal's, Prim's and Boruvka's Algorithms
+Algorithms: Kruskal's, Prim's and Boruvka's Algorithms
 
 Problem 9: Netowrk Flow: Max Flow
 
-    Q: With an inifinte input source how much "flow" can we push through the network
+Q: With an inifinte input source how much "flow" can we push through the network
 
-    Algorithms: Ford-Fulkerson, Edmonds-Karp and Dinic's algorithms
+Algorithms: Ford-Fulkerson, Edmonds-Karp and Dinic's algorithms
 
 ---------------------------------------------------
 
@@ -85,12 +85,12 @@ g = adjacency list representing graph
 visited = [false,...,false] # size n
 
 func dfs(at):
-    if visited[at]: return
-    visited[at] = true
+if visited[at]: return
+visited[at] = true
 
-    neighbors = graph[at]
-    for next in neighbors:
-        dfs(next)
+neighbors = graph[at]
+for next in neighbors:
+dfs(next)
 
 --> Finding connected components
 Coloring = Assign a vlaue to each group to be able to tell components apart
@@ -98,11 +98,11 @@ Use a DFS algo -> Start a DFS at each node unless it has already been visited.
 Mark all reachable nodes as being part of the same components
 
 func findComponents():
-    for(i = 0; i < n; i++):
-        if !visited[i]:
-            count++
-            dfs(i)
-    return (count, components)
+for(i = 0; i < n; i++):
+if !visited[i]:
+count++
+dfs(i)
+return (count, components)
 
 What else?
 - Computed Min Span Tree
@@ -132,14 +132,14 @@ priority_queue.add(random_node)
 added(random_node)
 
 func bfs(priority_queue):
-    node = priority_queue.pop()
-    get_neighbors(node)
-    for neighbor in get_neighbors:
-        if neighbor !visited && !added:
-            priority_queue.add(neighbor)
-            added(node)
-    visited(node)
-    bfs(priority_queue)
+node = priority_queue.pop()
+get_neighbors(node)
+for neighbor in get_neighbors:
+if neighbor !visited && !added:
+priority_queue.add(neighbor)
+added(node)
+visited(node)
+bfs(priority_queue)
 
     
     
