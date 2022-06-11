@@ -141,5 +141,13 @@ added(node)
 visited(node)
 bfs(priority_queue)
 
+---------------------------------------------------
+
+Breadth First Search Grid Shortest Path
+
+A grid is an implicit graph.
     
-    
+Take a grid and label each cell from [0,n) where n is the number of cells in the grid
+Create an Adjacency list and matrix
+
+  
